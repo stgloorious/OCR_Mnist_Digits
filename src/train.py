@@ -28,7 +28,7 @@ def train (neural_network, training_data_path, epochs):
     print ("")
 
     ## TRAIN MODEL
-    print ("Training in progess...")
+    print ("Training in progress...")
 
     # prepare progress bar
     progress=0
