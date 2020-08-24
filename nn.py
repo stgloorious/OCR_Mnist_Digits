@@ -1,6 +1,16 @@
 import numpy
 import scipy.special
 
+import train
+import test
+
+## Contains the fundamental methods to train and use a 
+# neural network. 
+# 
+# It is hard-coded for one hidden layer. Error back-propagation based on weights is used to train the model.
+# The number of input, hidden and output layers as well as the learning rate is variable 
+# and set through arguments. 
+#
 class neuralNetwork:
     def __init__(self, inputnodes,hiddennodes,outputnodes,learningrate):
         # Set number of nodes in each input, hidden, outer layer
