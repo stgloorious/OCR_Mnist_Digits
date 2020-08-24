@@ -1,3 +1,11 @@
+## @package train
+# Takes training data provided via a local path and prepares the data to be used by the neural network. Provides status messages.
+#
+# Training data is supposed to be in .csv format, where every digit is represented by a new line.
+# Pixel values are in greyscale between 0 and 255. First value of every new line (new digit) is 
+# its label (value that it is supposed to be representing).
+#
+
 import numpy
 import time
 from tqdm import tqdm

@@ -23,6 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OCR_Mnist_Digits
    </div>
+   <div id="projectbrief">Demonstration of digit recognition using a neural network</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>nn</b></li><li class="navelem"><a class="el" href="classnn_1_1neural_network.html">neuralNetwork</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacenn.html">nn</a></li><li class="navelem"><a class="el" href="classnn_1_1neural_network.html">neuralNetwork</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,51 +74,277 @@ $(function() {
 <div class="title">nn.neuralNetwork Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Contains the fundamental methods to train and use a neural network.  
- <a href="classnn_1_1neural_network.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f509a80a433218c24f25e0b937f5084"><td class="memItemLeft" align="right" valign="top"><a id="a1f509a80a433218c24f25e0b937f5084"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b> (self, inputnodes, hiddennodes, outputnodes, learningrate)</td></tr>
+<tr class="memitem:a1f509a80a433218c24f25e0b937f5084"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a1f509a80a433218c24f25e0b937f5084">__init__</a> (self, inputnodes, hiddennodes, outputnodes, learningrate)</td></tr>
+<tr class="memdesc:a1f509a80a433218c24f25e0b937f5084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activation is set to the sigmoid function, rest can be set to your hearts content.  <a href="classnn_1_1neural_network.html#a1f509a80a433218c24f25e0b937f5084">More...</a><br /></td></tr>
 <tr class="separator:a1f509a80a433218c24f25e0b937f5084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa8c0fbdac46cd8412b963289615897"><td class="memItemLeft" align="right" valign="top"><a id="a4fa8c0fbdac46cd8412b963289615897"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>train</b> (self, inputs_list, targets_list)</td></tr>
+<tr class="memitem:a4fa8c0fbdac46cd8412b963289615897"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a4fa8c0fbdac46cd8412b963289615897">train</a> (self, inputs_list, targets_list)</td></tr>
+<tr class="memdesc:a4fa8c0fbdac46cd8412b963289615897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares current output with the desired output (target) and adjusts the weights accordingly.  <a href="classnn_1_1neural_network.html#a4fa8c0fbdac46cd8412b963289615897">More...</a><br /></td></tr>
 <tr class="separator:a4fa8c0fbdac46cd8412b963289615897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab37e301200c92f1fbe3e9538989465"><td class="memItemLeft" align="right" valign="top"><a id="abab37e301200c92f1fbe3e9538989465"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><b>query</b> (self, inputs_list)</td></tr>
+<tr class="memitem:abab37e301200c92f1fbe3e9538989465"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#abab37e301200c92f1fbe3e9538989465">query</a> (self, inputs_list)</td></tr>
+<tr class="memdesc:abab37e301200c92f1fbe3e9538989465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the output of the network, given an input.  <a href="classnn_1_1neural_network.html#abab37e301200c92f1fbe3e9538989465">More...</a><br /></td></tr>
 <tr class="separator:abab37e301200c92f1fbe3e9538989465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9595b9206760f3762a0be92fa6547fd3"><td class="memItemLeft" align="right" valign="top"><a id="a9595b9206760f3762a0be92fa6547fd3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>inodes</b></td></tr>
+<tr class="memitem:a9595b9206760f3762a0be92fa6547fd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a9595b9206760f3762a0be92fa6547fd3">inodes</a></td></tr>
+<tr class="memdesc:a9595b9206760f3762a0be92fa6547fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the number of input nodes aka input channels.  <a href="classnn_1_1neural_network.html#a9595b9206760f3762a0be92fa6547fd3">More...</a><br /></td></tr>
 <tr class="separator:a9595b9206760f3762a0be92fa6547fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4baa6a0c27c9285952e3618b0b8d2592"><td class="memItemLeft" align="right" valign="top"><a id="a4baa6a0c27c9285952e3618b0b8d2592"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>hnodes</b></td></tr>
+<tr class="memitem:a4baa6a0c27c9285952e3618b0b8d2592"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a4baa6a0c27c9285952e3618b0b8d2592">hnodes</a></td></tr>
+<tr class="memdesc:a4baa6a0c27c9285952e3618b0b8d2592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the number of hidden nodes.  <a href="classnn_1_1neural_network.html#a4baa6a0c27c9285952e3618b0b8d2592">More...</a><br /></td></tr>
 <tr class="separator:a4baa6a0c27c9285952e3618b0b8d2592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2813aadeb74c22ae417d1546120c1b"><td class="memItemLeft" align="right" valign="top"><a id="aae2813aadeb74c22ae417d1546120c1b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>onodes</b></td></tr>
+<tr class="memitem:aae2813aadeb74c22ae417d1546120c1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#aae2813aadeb74c22ae417d1546120c1b">onodes</a></td></tr>
+<tr class="memdesc:aae2813aadeb74c22ae417d1546120c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the number of output nodes aka output channels.  <a href="classnn_1_1neural_network.html#aae2813aadeb74c22ae417d1546120c1b">More...</a><br /></td></tr>
 <tr class="separator:aae2813aadeb74c22ae417d1546120c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4b2283f6dcb71edc92746b8e364cb9"><td class="memItemLeft" align="right" valign="top"><a id="abb4b2283f6dcb71edc92746b8e364cb9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>wih</b></td></tr>
+<tr class="memitem:abb4b2283f6dcb71edc92746b8e364cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#abb4b2283f6dcb71edc92746b8e364cb9">wih</a></td></tr>
+<tr class="memdesc:abb4b2283f6dcb71edc92746b8e364cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link weight matrix.  <a href="classnn_1_1neural_network.html#abb4b2283f6dcb71edc92746b8e364cb9">More...</a><br /></td></tr>
 <tr class="separator:abb4b2283f6dcb71edc92746b8e364cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d64430d4398626aac0fc0c3d86f8f34"><td class="memItemLeft" align="right" valign="top"><a id="a0d64430d4398626aac0fc0c3d86f8f34"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>who</b></td></tr>
+<tr class="memitem:a0d64430d4398626aac0fc0c3d86f8f34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a0d64430d4398626aac0fc0c3d86f8f34">who</a></td></tr>
+<tr class="memdesc:a0d64430d4398626aac0fc0c3d86f8f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Link weight matrix.  <a href="classnn_1_1neural_network.html#a0d64430d4398626aac0fc0c3d86f8f34">More...</a><br /></td></tr>
 <tr class="separator:a0d64430d4398626aac0fc0c3d86f8f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f42fa458ed602eed290acae5723124"><td class="memItemLeft" align="right" valign="top"><a id="a07f42fa458ed602eed290acae5723124"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lr</b></td></tr>
+<tr class="memitem:a07f42fa458ed602eed290acae5723124"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#a07f42fa458ed602eed290acae5723124">lr</a></td></tr>
+<tr class="memdesc:a07f42fa458ed602eed290acae5723124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies learning rate.  <a href="classnn_1_1neural_network.html#a07f42fa458ed602eed290acae5723124">More...</a><br /></td></tr>
 <tr class="separator:a07f42fa458ed602eed290acae5723124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93f07ee165999f11bae8d0edd1f18f7"><td class="memItemLeft" align="right" valign="top"><a id="ae93f07ee165999f11bae8d0edd1f18f7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>activation_function</b></td></tr>
+<tr class="memitem:ae93f07ee165999f11bae8d0edd1f18f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnn_1_1neural_network.html#ae93f07ee165999f11bae8d0edd1f18f7">activation_function</a></td></tr>
+<tr class="memdesc:ae93f07ee165999f11bae8d0edd1f18f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies activation function.  <a href="classnn_1_1neural_network.html#ae93f07ee165999f11bae8d0edd1f18f7">More...</a><br /></td></tr>
 <tr class="separator:ae93f07ee165999f11bae8d0edd1f18f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the fundamental methods to train and use a neural network. </p>
-<p>It is hard-coded for one hidden layer. Error back-propagation based on weights is used to train the model. The number of input, hidden and output layers as well as the learning rate is variable and set through arguments. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/nn.py</li>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1f509a80a433218c24f25e0b937f5084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f509a80a433218c24f25e0b937f5084">&#9670;&nbsp;</a></span>__init__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def nn.neuralNetwork.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>inputnodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>hiddennodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>outputnodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>learningrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activation is set to the sigmoid function, rest can be set to your hearts content. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abab37e301200c92f1fbe3e9538989465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab37e301200c92f1fbe3e9538989465">&#9670;&nbsp;</a></span>query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def nn.neuralNetwork.query </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>inputs_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the output of the network, given an input. </p>
+
+</div>
+</div>
+<a id="a4fa8c0fbdac46cd8412b963289615897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa8c0fbdac46cd8412b963289615897">&#9670;&nbsp;</a></span>train()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def nn.neuralNetwork.train </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>inputs_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>targets_list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares current output with the desired output (target) and adjusts the weights accordingly. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae93f07ee165999f11bae8d0edd1f18f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93f07ee165999f11bae8d0edd1f18f7">&#9670;&nbsp;</a></span>activation_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.activation_function</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies activation function. </p>
+
+</div>
+</div>
+<a id="a4baa6a0c27c9285952e3618b0b8d2592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baa6a0c27c9285952e3618b0b8d2592">&#9670;&nbsp;</a></span>hnodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.hnodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the number of hidden nodes. </p>
+<p>There is a fixed number of one layer. </p>
+
+</div>
+</div>
+<a id="a9595b9206760f3762a0be92fa6547fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9595b9206760f3762a0be92fa6547fd3">&#9670;&nbsp;</a></span>inodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.inodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the number of input nodes aka input channels. </p>
+
+</div>
+</div>
+<a id="a07f42fa458ed602eed290acae5723124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07f42fa458ed602eed290acae5723124">&#9670;&nbsp;</a></span>lr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.lr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies learning rate. </p>
+
+</div>
+</div>
+<a id="aae2813aadeb74c22ae417d1546120c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae2813aadeb74c22ae417d1546120c1b">&#9670;&nbsp;</a></span>onodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.onodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specifies the number of output nodes aka output channels. </p>
+
+</div>
+</div>
+<a id="a0d64430d4398626aac0fc0c3d86f8f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d64430d4398626aac0fc0c3d86f8f34">&#9670;&nbsp;</a></span>who</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.who</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Link weight matrix. </p>
+<p>Weights of connections hidden &mdash;&gt; output weights inside arrays are w_i_j, where link i from node i to j in the next layer </p>
+
+</div>
+</div>
+<a id="abb4b2283f6dcb71edc92746b8e364cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4b2283f6dcb71edc92746b8e364cb9">&#9670;&nbsp;</a></span>wih</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nn.neuralNetwork.wih</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Link weight matrix. </p>
+<p>Weights of connections input &mdash;&gt; hidden weights inside arrays are w_i_j, where link i from node i to j in the next layer </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/<a class="el" href="nn_8py.html">nn.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

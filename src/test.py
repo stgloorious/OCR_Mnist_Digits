@@ -1,10 +1,18 @@
+## @package test
+# Takes test data provided via a local path and compares the networks output with the labels of the test data. Provides status messages and gives performance reading at the end
+#
+# Test data is supposed to be in .csv format, where every digit is represented by a new line.
+# Pixel values are in greyscale between 0 and 255. First value of every new line (new digit) is 
+# its label (value that it is supposed to be representing).
+#
+
 import matplotlib.pyplot
 import numpy
 import scipy.special
 import time
 from tqdm import tqdm
 
-## Tests the neural network
+##  @brief Tests the neural network
 #   @param neural_network Neural network object that should be tested
 #   @param test_data_path Path to the .csv file with the testing data. First entry must be label.
 #

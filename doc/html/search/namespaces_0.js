@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ocr_5fmnist_5fdigits_4',['ocr_mnist_digits',['../namespaceocr__mnist__digits.html',1,'']]]
+  ['nn_20',['nn',['../namespacenn.html',1,'']]]
 ];

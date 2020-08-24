@@ -1,9 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "no",
+  0: "_ahilnoqtw",
   1: "n",
-  2: "o",
-  3: "n"
+  2: "not",
+  3: "not",
+  4: "_qt",
+  5: "ahilnow"
 };
 
 var indexSectionNames =
@@ -11,7 +13,9 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "variables"
+  3: "files",
+  4: "functions",
+  5: "variables"
 };
 
 var indexSectionLabels =
@@ -19,6 +23,8 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Namespaces",
-  3: "Variables"
+  3: "Files",
+  4: "Functions",
+  5: "Variables"
 };
 

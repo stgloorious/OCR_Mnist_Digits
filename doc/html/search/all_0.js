@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['n_0',['n',['../namespaceocr__mnist__digits.html#a32e79e1686131cd2a30a0ff018b771d6',1,'ocr_mnist_digits']]],
-  ['neuralnetwork_1',['neuralNetwork',['../classnn_1_1neural_network.html',1,'nn']]]
+  ['_5f_5finit_5f_5f_0',['__init__',['../classnn_1_1neural_network.html#a1f509a80a433218c24f25e0b937f5084',1,'nn::neuralNetwork']]]
 ];

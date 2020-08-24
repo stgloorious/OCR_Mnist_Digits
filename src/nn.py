@@ -1,36 +1,49 @@
+## @package nn Contains the fundamental methods to train and use a neural network. 
+# 
+# It is hard-coded for one hidden layer. Error back-propagation based on weights is used to train the model.
+# The number of input, hidden and output layers as well as the learning rate is variable 
+# and set through arguments. 
+#
+
 import numpy
 import scipy.special
 
 import train
 import test
 
-## Contains the fundamental methods to train and use a 
-# neural network. 
+## @package nn Contains the fundamental methods to train and use a neural network. 
 # 
 # It is hard-coded for one hidden layer. Error back-propagation based on weights is used to train the model.
 # The number of input, hidden and output layers as well as the learning rate is variable 
 # and set through arguments. 
 #
 class neuralNetwork:
+    ## Activation is set to the sigmoid function, rest can be set to your hearts content
     def __init__(self, inputnodes,hiddennodes,outputnodes,learningrate):
         # Set number of nodes in each input, hidden, outer layer
+        ##Specifies the number of input nodes aka input channels
         self.inodes = inputnodes
+        ##Specifies the number of hidden nodes. There is a fixed number of one layer.
         self.hnodes = hiddennodes
+        ##Specifies the number of output nodes aka output channels
         self.onodes = outputnodes
 
-        # Link weight matrices, wih and who
+        ## Link weight matrix. Weights of connections input ---> hidden
         # weights inside arrays are w_i_j, where link i from node i to j in the next layer
         self.wih = numpy.random.normal(0.0,pow(self.hnodes,-0.5),(self.hnodes,self.inodes))
+        ## Link weight matrix. Weights of connections hidden ---> output
+        # weights inside arrays are w_i_j, where link i from node i to j in the next layer
         self.who = numpy.random.normal(0.0,pow(self.onodes,-0.5),(self.onodes,self.hnodes))
 
-        # learning rate
+        ## Specifies learning rate
         self.lr = learningrate
 
-        # activation function
+        ## Specifies activation function
         self.activation_function = lambda x: scipy.special.expit(x)
 
         pass
 
+    ## Compares current output with the desired output (target) and adjusts the weights accordingly
     def train(self, inputs_list, targets_list):
         # convert inputs list to 2D array
         inputs = numpy.array(inputs_list,ndmin=2).T 
@@ -62,6 +75,7 @@ class neuralNetwork:
 
         pass
 
+    ## Calculates the output of the network, given an input.
     def query(self, inputs_list):
         # convert inputs list to 2D array
         inputs = numpy.array(inputs_list,ndmin=2).T 

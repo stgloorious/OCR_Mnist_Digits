@@ -6,13 +6,13 @@
  
 import nn
 
-## CREATE INSTANCE OF NEURAL NETWORK
+# CREATE INSTANCE OF NEURAL NETWORK
 n = nn.neuralNetwork((28*28),100,10,0.3)
 # input is a 28 by 28 image, 100 hidden layers. 
 # output are digit indicators 0...9. Learning rate is 0.3.
 
-## TRAIN WITH MNIST DATABASE (60'000 samples)
+# TRAIN WITH MNIST DATABASE (60'000 samples)
 nn.train.train(n,"C:/Users/stefa/Desktop/mnist_train.csv")
 
-## TEST WITH SEPARATE TEST DATA SET (10'000 samples)
+# TEST WITH SEPARATE TEST DATA SET (10'000 samples)
 nn.test.test(n,"C:/Users/stefa/Desktop/mnist_test.csv")
