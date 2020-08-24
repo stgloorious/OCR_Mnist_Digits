@@ -74,17 +74,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a92ebd1bae11f8c6a2e181954dabb6c9b"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetrain.html#a92ebd1bae11f8c6a2e181954dabb6c9b">train</a> (neural_network, training_data_path)</td></tr>
-<tr class="memdesc:a92ebd1bae11f8c6a2e181954dabb6c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains the neural network.  <a href="namespacetrain.html#a92ebd1bae11f8c6a2e181954dabb6c9b">More...</a><br /></td></tr>
-<tr class="separator:a92ebd1bae11f8c6a2e181954dabb6c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f98e6b87c1f0e1baf3481b4036291ee"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetrain.html#a1f98e6b87c1f0e1baf3481b4036291ee">train</a> (neural_network, training_data_path, epochs)</td></tr>
+<tr class="memdesc:a1f98e6b87c1f0e1baf3481b4036291ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trains the neural network.  <a href="namespacetrain.html#a1f98e6b87c1f0e1baf3481b4036291ee">More...</a><br /></td></tr>
+<tr class="separator:a1f98e6b87c1f0e1baf3481b4036291ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Takes training data provided via a local path and prepares the data to be used by the neural network. </p>
 <p>Provides status messages.</p>
 <p>Training data is supposed to be in .csv format, where every digit is represented by a new line. Pixel values are in greyscale between 0 and 255. First value of every new line (new digit) is its label (value that it is supposed to be representing). </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a92ebd1bae11f8c6a2e181954dabb6c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92ebd1bae11f8c6a2e181954dabb6c9b">&#9670;&nbsp;</a></span>train()</h2>
+<a id="a1f98e6b87c1f0e1baf3481b4036291ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f98e6b87c1f0e1baf3481b4036291ee">&#9670;&nbsp;</a></span>train()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -99,7 +99,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>training_data_path</em>&#160;</td>
+          <td class="paramname"><em>training_data_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>epochs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,6 +120,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">neural_network</td><td>The neural network object that should be trained </td></tr>
     <tr><td class="paramname">training_data_path</td><td>Path to the .csv file that contains the training data. First entry must be label. </td></tr>
+    <tr><td class="paramname">epochs</td><td>Number of iterations the whole training set is used for training (repeated training) </td></tr>
   </table>
   </dd>
 </dl>
