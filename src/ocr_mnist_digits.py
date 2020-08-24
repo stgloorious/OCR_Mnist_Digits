@@ -12,7 +12,7 @@ n = nn.neuralNetwork((28*28),100,10,0.3)
 # output are digit indicators 0...9. Learning rate is 0.3.
 
 # TRAIN WITH MNIST DATABASE (60'000 samples)
-nn.train.train(n,"C:/Users/stefa/Desktop/mnist_train.csv")
+nn.train.train(n,"C:/Users/stefa/Desktop/mnist_train.csv") # <-- Change path
 
 # TEST WITH SEPARATE TEST DATA SET (10'000 samples)
-nn.test.test(n,"C:/Users/stefa/Desktop/mnist_test.csv")
+nn.test.test(n,"C:/Users/stefa/Desktop/mnist_test.csv") # <-- Change path
