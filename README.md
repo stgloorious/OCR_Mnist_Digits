@@ -11,6 +11,7 @@ After that, it is tested with a labeled set containing 10'000 unseen samples.
 The data set is not included but can be found here: [Training data](http://www.pjreddie.com/media/files/mnist_train.csv), [Testing data](http://pjreddie.com/media/files/mnist_test.csv)
 
 [**Doxygen Docs**](https://stgloorious.github.io/OCR_Mnist_Digits/index.html)
+
 ![Screenshot](https://github.com/stgloorious/OCR_Mnist_Digits/blob/master/docs/screenshot.png)
 
 
