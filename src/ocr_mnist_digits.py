@@ -20,11 +20,11 @@ n = nn.neuralNetwork((28*28),500,10,0.1)
 #
 # vvv Uncomment next line to train neural network vvv
 #
-# nn.train.train(n,"C:/Users/stefa/Desktop/mnist_train.csv",5) # <---- Change this path
+ nn.train.train(n,"C:/Users/stefa/Dropbox/Documents/Hobby/Software/Python/DigitDatasetCreator/training.csv",5) # <---- Change this path
 
 ## TEST WITH SEPARATE TEST DATA SET (10'000 samples)
 # Testing data: http://pjreddie.com/media/files/mnist_test.csv
 #
 #
-nn.test.test(n,"C:/Users/stefa/Desktop/mnist_test.csv") # <---- Change this path
+nn.test.test(n,"C:/Users/stefa/Dropbox/Documents/Hobby/Software/Python/DigitDatasetCreator/testing.csv") # <---- Change this path
 
