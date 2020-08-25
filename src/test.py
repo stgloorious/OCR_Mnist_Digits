@@ -25,6 +25,9 @@ def test (neural_network,test_data_path):
     total_count=len(testing_data_list)
     print ("Transferred %d lines of testing data into memory" %(total_count))
 
+    # restoring data of previously trained network
+    neural_network.restoreState()
+
     # prepare progress bar
     pbar = tqdm(total=total_count,desc="Testing")
 
@@ -48,12 +51,12 @@ def test (neural_network,test_data_path):
             #display the first three digits it got wrong
             if error_count <= 3:
                 image_array = numpy.asfarray(all_values[1:]).reshape((28,28)) # take the data and draw it
-                fig, (inp, outp) = matplotlib.pyplot.subplots(1,2)
+                fig, (inp, outp) = matplotlib.pyplot.subplots(1,2) #create a figure with two subplots in it
                 fig = matplotlib.pyplot.figure()
-                inp.imshow(image_array,cmap='Greys',interpolation='None')
+                inp.imshow(image_array,cmap='Greys',interpolation='None') # use grayscale color map to draw image
                 inp.set_title("Input")
-                outp.imshow(out,cmap='Greys',interpolation='None')
-                outp.set_yticks([0,1,2,3,4,5,6,7,8,9]) 
+                outp.imshow(out,cmap='Greys',interpolation='None') # use grayscale to draw output plot
+                outp.set_yticks([0,1,2,3,4,5,6,7,8,9]) # make sure all yticks are drawn on the output plot
                 outp.set_title("Output")
     pass
     pbar.close()

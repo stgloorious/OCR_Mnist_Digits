@@ -93,3 +93,19 @@ class neuralNetwork:
         final_outputs = self.activation_function(final_inputs)
 
         return final_outputs
+
+    ## Saves the current trained state of the neural network by writing the weights in .csv files
+    # Weights from input to hidden layers are saved in trained_model_wih.csv
+    # Weights from hidden to output layers are saved in trained_model_who.csv
+    def saveState(self):
+        numpy.savetxt('trained_model_wih.csv', self.wih, delimiter=',')
+        numpy.savetxt('trained_model_who.csv', self.who, delimiter=',')
+    pass
+
+    ## Restores a past trained state of the neural network by reading weights from .csv files
+    # Weights from input to hidden layers are read from trained_model_wih.csv
+    # Weights from hidden to output layers are read from trained_model_who.csv
+    def restoreState(self):
+        self.wih = numpy.loadtxt('trained_model_wih.csv', delimiter=',')
+        self.who = numpy.loadtxt('trained_model_who.csv', delimiter=',')
+    pass

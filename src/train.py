@@ -52,4 +52,6 @@ def train (neural_network, training_data_path, epochs):
         pass  
     pass
     pbar.close()
+    # save the current state of the weights
+    neural_network.saveState()
 pass
